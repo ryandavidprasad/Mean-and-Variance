@@ -51,8 +51,8 @@ It shows the distance of a random variable from its mean. It is calcualted as
 # Program :
 
 ```
-# Developed by : Naveen Jaisanker
-# Register No : 21222410039
+# Developed by : Ryan David Prasad
+# Register No : 212224040282
 
 import numpy as np
 
@@ -79,6 +79,8 @@ print("Standard deviation =", round(sd,3))
 
 
 # Output : 
+
+![Screenshot](ss_1.png)
 
 
 # Results :
