@@ -1,5 +1,6 @@
 #  Mean and variance of a discrete  distribution
 
+# Date : 28/01/2026
 
 # Aim : 
 
@@ -49,9 +50,36 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 # Program :
 
+```
+# Developed by : Naveen Jaisanker
+# Register No : 21222410039
+
+import numpy as np
+
+L = [int(i) for i in input("Enter arrivals: ").split()]
+
+N = len(L)
+M = max(L)
+
+x = list(range(M+1))
+f = [L.count(i) for i in x]
+
+p = [i/N for i in f]
+
+mean = np.inner(x, p)
+Ex2 = np.inner(np.square(x), p)
+
+var = Ex2 - mean**2
+sd = np.sqrt(var)
+
+print("Mean arrival rate =", round(mean,3))
+print("Variance =", round(var,3))
+print("Standard deviation =", round(sd,3))
+```
 
 
 # Output : 
+
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
